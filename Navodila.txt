@@ -1,0 +1,28 @@
+﻿//TODO Demonstrira zahtevo po več dovoljenjih naenkrat na primeru lokacije. Ni pa mi jasno, ali rabimo obe dovoljenji ali je dovolj le za fino lokacijo.
+
+https://www.youtube.com/watch?v=XwW7WDOAiWE  (prvih 42 minut)
+https://developer.android.com/training/location/
+
+
+//TODO 01 Dodamo knjižnico za Fused Location (posurfamo "google play services release notes") in poiščemo location
+//TODO 01 V datoteko build.gradle (modul) dodamo implementation 'com.google.android.gms:play-services-location:17.1.0' in Syncamo
+//TODO 01 ali pa v File / Project Structure / Dependencies / app dodamo isto knjižnico
+
+//TODO 02 V datoteki build.gradle (modul) posodobimo knjižnice (če se z miško postavimo na knjžnico, dobimo obvestilo, če obstaja novejša verzija). Če smo v prejšnji točki uporabili Project Structure nam že tam predlaga najnovejšo knjižnico.
+
+//TODO 03 Design in potrebne spremenljivke v javi
+
+//TODO 04 Sledimo tutorialu za lokacijo na https://developer.android.com/training/location/ oz prvim 42 minutam 
+https://www.youtube.com/watch?v=XwW7WDOAiWE (v prvem dovoljenje za coarse v drugem za fine location, mi bomo dali oboje)
+//TODO 04-1 Get the last known location 
+
+//TODO 04-1-1 V manifest dodamo  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+//TODO 04-1-2 V manifest dodamo  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+
+//TODO 04-1-3 V MainActivity.java doddamo kodo za FusedLOcationProviderClient
+
+//TODO 04-1-4 Alt+Enter na fusedLocationClient.getLastLocation() => Add permission 
+
+
+//TODO 04-2 requestLocationUpdates() z uporabo LocationCallback 
+
